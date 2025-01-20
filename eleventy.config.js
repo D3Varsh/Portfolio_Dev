@@ -20,15 +20,17 @@ module.exports = function (eleventyConfig) {
       const response = await client.getEntries({
         content_type: "devarsh",
       });
-
+  
       console.log("Content fetched from Contentful:", response.items); // Debug log
-
+  
       return response.items.map((item) => {
+        console.log("Content field structure:", item.fields.content); // Debug the content structure
+  
         return {
           title: item.fields.title,
           image: item.fields.image ? item.fields.image.fields.file.url : null,
           slug: item.fields.slug,
-          content: documentToHtmlString(item.fields.content),
+          content: documentToHtmlString(item.fields.content), // Render rich text content
           date: item.fields.date,
         };
       });
@@ -37,6 +39,7 @@ module.exports = function (eleventyConfig) {
       return [];
     }
   });
+  
 
   // Passthrough for static assets (like CSS)
   eleventyConfig.addPassthroughCopy("src/_includes/css");
