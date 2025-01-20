@@ -14,11 +14,11 @@ module.exports = function (eleventyConfig) {
     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
   });
 
-  // Fetch the player data from Contentful
+  // Fetch the Devarsh entries from Contentful
   eleventyConfig.addCollection("devarsh", async function () {
     try {
       const response = await client.getEntries({
-        content_type: "devarsh", // Content model name in Contentful
+        content_type: "devarsh",
       });
 
       console.log("Content fetched from Contentful:", response.items); // Debug log
