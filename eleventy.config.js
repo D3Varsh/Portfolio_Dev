@@ -6,9 +6,10 @@ module.exports = function (eleventyConfig) {
 
   // Contentful Configuration
   const client = contentful.createClient({
-    space:"a70tz55cwe4z",
-    accessToken: "rG-jHN-q08huMOALYi4l8GcyW5IAo1noLoW__3qAL3U",
+    space: process.env.CONTENTFUL_SPACE_ID, // Use environment variable
+    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN, // Use environment variable
   });
+  
 
   // Fetch the Devarsh entries from Contentful
   eleventyConfig.addCollection("devarsh", async function () {

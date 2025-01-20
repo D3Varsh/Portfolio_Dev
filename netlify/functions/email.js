@@ -1,8 +1,6 @@
 const sgMail = require('@sendgrid/mail');
 require('dotenv').config();
 
-
-
 exports.handler = async (event) => {
   if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config();
