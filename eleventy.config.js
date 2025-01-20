@@ -28,6 +28,7 @@ module.exports = function (eleventyConfig) {
           slug: item.fields.slug,
           content: documentToHtmlString(item.fields.content),
           date: item.fields.date,
+          permalink: `/devarsh/${devarsh.fields.slug}/index.html`
         };
       });
     } catch (error) {
