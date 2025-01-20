@@ -4,8 +4,8 @@ require('dotenv').config();
 
 // Initialize Contentful client
 const client = contentful.createClient({
-  space: process.env.CONTENTFUL_SPACE_ID,
-  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+  space: process.env.CONTENTFUL_SPACE_ID || 'a70tz55cwe4z',
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN || 'rG-jHN-q08huMOALYi4l8GcyW5IAo1noLoW__3qAL3U',
 });
 
 module.exports = async () => {
