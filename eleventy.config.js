@@ -21,6 +21,8 @@ module.exports = function (eleventyConfig) {
         content_type: "devarsh",
       });
 
+      console.log("Content fetched from Contentful:", response.items); // Debug log
+
       return response.items.map((item) => {
         return {
           title: item.fields.title,
@@ -28,7 +30,6 @@ module.exports = function (eleventyConfig) {
           slug: item.fields.slug,
           content: documentToHtmlString(item.fields.content),
           date: item.fields.date,
-          permalink: `/devarsh/${devarsh.fields.slug}/index.html`
         };
       });
     } catch (error) {
