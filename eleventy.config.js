@@ -3,10 +3,6 @@ const contentful = require("contentful");
 const { documentToHtmlString } = require("@contentful/rich-text-html-renderer");
 
 module.exports = function (eleventyConfig) {
-  // Check if environment variables are properly set
-  if (!process.env.CONTENTFUL_SPACE_ID || !process.env.CONTENTFUL_ACCESS_TOKEN) {
-    throw new Error('Missing Contentful space ID or access token in environment variables.');
-  }
 
   // Contentful Configuration
   const client = contentful.createClient({
