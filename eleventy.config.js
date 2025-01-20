@@ -10,8 +10,8 @@ module.exports = function (eleventyConfig) {
 
   // Contentful Configuration
   const client = contentful.createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
-    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+    space:"a70tz55cwe4z",
+    accessToken: "rG-jHN-q08huMOALYi4l8GcyW5IAo1noLoW__3qAL3U",
   });
 
   // Fetch the Devarsh entries from Contentful
