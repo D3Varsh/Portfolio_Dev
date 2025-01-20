@@ -18,9 +18,9 @@ module.exports = async () => {
   // Transform the fetched data and add permalink
   return response.items.map(Devarsh => ({
     title: Devarsh.fields.title,
-    slug: Devarsh.fields.slug,
     image: Devarsh.fields.image?.fields?.file?.url,
-    description: Devarsh.fields.description,
+    slug: Devarsh.fields.slug,
+    content: Devarsh.fields.content,
     date: Devarsh.fields.date,
     permalink: `/Devarsh/${Devarsh.fields.slug}/index.html`  // Add permalink to data
   }));
