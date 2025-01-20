@@ -26,11 +26,14 @@ module.exports = function (eleventyConfig) {
       return response.items.map((item) => {
         console.log("Content field structure:", item.fields.content); // Debug the content structure
   
+        const htmlContent = documentToHtmlString(item.fields.content); // Render rich text content
+        console.log("Rendered HTML:", htmlContent); // Log the final HTML
+  
         return {
           title: item.fields.title,
           image: item.fields.image ? item.fields.image.fields.file.url : null,
           slug: item.fields.slug,
-          content: documentToHtmlString(item.fields.content), // Render rich text content
+          content: htmlContent,
           date: item.fields.date,
         };
       });
@@ -39,6 +42,7 @@ module.exports = function (eleventyConfig) {
       return [];
     }
   });
+  
   
   
 
