@@ -1,22 +1,17 @@
+<!-- index.njk -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
-  <link rel="stylesheet" href="/_includes/css/style.css">
 </head>
 <body>
-  {% include "partials/header.njk" %}
-  
-  <header>
-    <h1>{{ title }}</h1>
-  </header>
-  
-  <main>
-    {{ content | safe }}
-  </main>
+  <h1>Welcome to My Website</h1>
 
-  {% include "partials/footer.njk" %}
+  {% for item in collections.devarsh %}
+    <h2>{{ item.title }}</h2>
+    <div>{{ item.content | safe }}</div>  <!-- Render the HTML content -->
+  {% endfor %}
 </body>
 </html>
