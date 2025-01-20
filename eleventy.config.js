@@ -18,17 +18,17 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("devarsh", async function () {
     try {
       const response = await client.getEntries({
-        content_type: "devarsh",
+        content_type: "devarsh", // Content model name in Contentful
       });
-  
+
       console.log("Content fetched from Contentful:", response.items); // Debug log
-  
+
       return response.items.map((item) => {
         console.log("Content field structure:", item.fields.content); // Debug the content structure
-  
+
         const htmlContent = documentToHtmlString(item.fields.content); // Render rich text content
         console.log("Rendered HTML:", htmlContent); // Log the final HTML
-  
+
         return {
           title: item.fields.title,
           image: item.fields.image ? item.fields.image.fields.file.url : null,
@@ -42,9 +42,6 @@ module.exports = function (eleventyConfig) {
       return [];
     }
   });
-  
-  
-  
 
   // Passthrough for static assets (like CSS)
   eleventyConfig.addPassthroughCopy("src/_includes/css");
