@@ -5,8 +5,8 @@ const { documentToHtmlString } = require("@contentful/rich-text-html-renderer");
 module.exports = function (eleventyConfig) {
   // Contentful Configuration
   const client = contentful.createClient({
-    space:"a70tz55cwe4z",
-    accessToken:"rG-jHN-q08huMOALYi4l8GcyW5IAo1noLoW__3qAL3U",
+    space: process.env.CONTENTFUL_SPACE_ID,
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
   });
 
   // Fetch the player data from Contentful
