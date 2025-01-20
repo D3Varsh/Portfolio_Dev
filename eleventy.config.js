@@ -18,8 +18,8 @@ module.exports = function (eleventyConfig) {
     return response.items.map((item) => {
       return {
         title: item.fields.title,
-        slug: item.fields.slug,
         image: item.fields.image ? item.fields.image.fields.file.url : null,
+        slug: item.fields.slug,
         content: documentToHtmlString(item.fields.content),
         date: item.fields.date
       };
