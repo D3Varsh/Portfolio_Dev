@@ -3,6 +3,4 @@
 .env
 /dist
 /netlify.toml
-/package.json
-/package-lock.json
 
