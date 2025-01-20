@@ -11,17 +11,17 @@ const client = contentful.createClient({
 module.exports = async () => {
   // Fetch player data from Contentful
   const response = await client.getEntries({
-    content_type: 'Devarsh',
+    content_type: 'devarsh',
     order: 'sys.createdAt',
   });
 
   // Transform the fetched data and add permalink
-  return response.items.map(Devarsh => ({
-    title: Devarsh.fields.title,
-    image: Devarsh.fields.image?.fields?.file?.url,
-    slug: Devarsh.fields.slug,
-    content: Devarsh.fields.content,
-    date: Devarsh.fields.date,
-    permalink: `/Devarsh/${Devarsh.fields.slug}/index.html`  // Add permalink to data
+  return response.items.map(devarsh => ({
+    title: devarsh.fields.title,
+    image: devarsh.fields.image?.fields?.file?.url,
+    slug: devarsh.fields.slug,
+    content: devarsh.fields.content,
+    date: devarsh.fields.date,
+    permalink: `/devarsh/${devarsh.fields.slug}/index.html`  // Add permalink to data
   }));
 };

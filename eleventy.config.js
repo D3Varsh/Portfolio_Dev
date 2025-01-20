@@ -10,9 +10,9 @@ module.exports = function (eleventyConfig) {
   });
 
   // Fetch the player data from Contentful
-  eleventyConfig.addCollection("Devarsh", async function () {
+  eleventyConfig.addCollection("devarsh", async function () {
     const response = await client.getEntries({
-      content_type: "Devarsh",
+      content_type: "devarsh",
     });
 
     return response.items.map((item) => {
@@ -20,7 +20,7 @@ module.exports = function (eleventyConfig) {
         title: item.fields.title,
         slug: item.fields.slug,
         image: item.fields.image ? item.fields.image.fields.file.url : null,
-        description: documentToHtmlString(item.fields.description),
+        content: documentToHtmlString(item.fields.content),
         date: item.fields.date
       };
     });
