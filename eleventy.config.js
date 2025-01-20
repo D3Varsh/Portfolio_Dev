@@ -3,10 +3,10 @@ const contentful = require("contentful");
 const { documentToHtmlString } = require("@contentful/rich-text-html-renderer");
 
 module.exports = function (eleventyConfig) {
-  // Contentful Configuration using environment variables
+  // Contentful Configuration
   const client = contentful.createClient({
-    space: process.env.CONTENTFUL_SPACE_ID, // Environment variable for space ID
-    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN, // Environment variable for access token
+    space:"a70tz55cwe4z",
+    accessToken:"rG-jHN-q08huMOALYi4l8GcyW5IAo1noLoW__3qAL3U",
   });
 
   // Fetch the player data from Contentful
