@@ -21,7 +21,7 @@ module.exports = async () => {
     image: devarsh.fields.image?.fields?.file?.url,
     slug: devarsh.fields.slug,
     content: devarsh.fields.content,
-    date: devarsh.fields.date ? format(new Date(devarsh.fields.date), 'MM/dd/yyyy') : null,
+    date: devarsh.fields.date,
     permalink: `/devarsh/${devarsh.fields.slug}/index.html`
   }));
 };
