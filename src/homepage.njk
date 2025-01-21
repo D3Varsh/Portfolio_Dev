@@ -5,9 +5,13 @@ permalink: "/index.html"
 ---
 
 <div class="devarsh-details">
-  <h1>{{ title }}</h1>
+  <h1>{{ devarsh.title }}</h1>
 
-  
-  <div class="devarsh-content">
-    {{ content | safe }}
+  {% if devarsh.image %}
+    <img src="{{ devarsh.image }}" alt="{{ devarsh.title }}" class="devarsh-image">
+  {% endif %}
+
+  <div class="devarsh-description">
+    {{ devarsh.description | safe }}
   </div>
+</div>
