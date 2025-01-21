@@ -16,7 +16,6 @@ module.exports = function (eleventyConfig) {
         content_type: "devarsh", // The content type in Contentful
       });
 
-      console.log("Fetched player data:", response.items); // Debug log
 
       return response.items.map((item) => {
         return {
