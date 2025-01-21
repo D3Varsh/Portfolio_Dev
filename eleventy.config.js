@@ -3,39 +3,33 @@ const contentful = require("contentful");
 const { documentToHtmlString } = require("@contentful/rich-text-html-renderer");
 
 module.exports = function (eleventyConfig) {
-
   // Contentful Configuration
   const client = contentful.createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,// Use environment variable
-    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+    space: process.env.CONTENTFUL_SPACE_ID, // Using environment variable for security
+    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN, // Using environment variable for security
   });
-  
 
-  // Fetch the Devarsh entries from Contentful
+  // Fetch the player data from Contentful
   eleventyConfig.addCollection("devarsh", async function () {
     try {
       const response = await client.getEntries({
-        content_type: "devarsh",
+        content_type: "devarsh", // The content type in Contentful
       });
 
-      console.log("Content fetched from Contentful:", response.items); // Debug log
+      console.log("Fetched player data:", response.items); // Debug log
 
       return response.items.map((item) => {
-        console.log("Content field structure:", item.fields.content); // Debug the content structure
-
-        const htmlContent = documentToHtmlString(item.fields.content); // Render rich text content
-        console.log("Rendered HTML:", htmlContent); // Log the final HTML
-
         return {
           title: item.fields.title,
-          image: item.fields.image ? item.fields.image.fields.file.url : null,
           slug: item.fields.slug,
-          content: htmlContent,
+          image: item.fields.image ? item.fields.image.fields.file.url : null,
+          description: documentToHtmlString(item.fields.description), // Render rich text content to HTML
           date: item.fields.date,
+          url: `/player/${item.fields.slug}/`, // URL path for the player
         };
       });
     } catch (error) {
-      console.error("Error fetching data from Contentful:", error);
+      console.error("Error fetching player data from Contentful:", error);
       return [];
     }
   });
