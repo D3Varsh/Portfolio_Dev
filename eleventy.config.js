@@ -10,7 +10,7 @@ module.exports = function (eleventyConfig) {
   });
 
   // Fetch the player data from Contentful
-  eleventyConfig.addCollection("devarsh", async function () {
+  eleventyConfig.addCollection("Devarsh", async function () {
     try {
       const response = await client.getEntries({
         content_type: "devarsh", // The content type in Contentful
