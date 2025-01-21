@@ -21,7 +21,6 @@ module.exports = async () => {
     image: devarsh.fields.image?.fields?.file?.url,
     slug: devarsh.fields.slug,
     content: devarsh.fields.content,
-    date: devarsh.fields.date,
-    permalink: `/devarsh/${devarsh.fields.slug}/index.html`  // Add permalink to data
+    date: devarsh.fields.date
   }));
 };
