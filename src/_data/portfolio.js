@@ -22,6 +22,6 @@ module.exports = async () => {
     slug: devarsh.fields.slug,
     content: devarsh.fields.content,
     date: devarsh.fields.date,
-    permalink: `/devarsh/${devarsh.fields.slug}/index.html`
+    permalink: `/project/${devarsh.fields.slug}/index.html`
   }));
 };

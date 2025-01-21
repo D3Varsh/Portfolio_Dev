@@ -24,7 +24,7 @@ module.exports = function (eleventyConfig) {
           slug: item.fields.slug,
           content: documentToHtmlString(item.fields.content), 
           date: item.fields.date,
-          url: `/devarsh/${item.fields.slug}/`, 
+          url: `/project/${item.fields.slug}/`, 
         };
       });
     } catch (error) {
