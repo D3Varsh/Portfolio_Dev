@@ -1,0 +1,11 @@
+{
+    "projects": [
+        {
+            "title": "Automated Banking Project",
+            "slug": "banking",
+            "image": "/image/download.png",
+            "content": "Automated Banking Project Testing 💻🔍\nIn this project, I took the lead in automating the testing process for a demo banking website, leveraging Selenium WebDriver with Python 🐍. Collaborating with my team, I designed a robust, menu-driven program to systematically execute tests across nine critical banking modules 🏦. These included essential customer management functions such as adding, editing, and deleting customer details. This initiative streamlined the testing process and ensured an efficient approach to identifying and resolving application issues 🚀. Additionally, I implemented a system for real-time test execution feedback, providing instant insights into results while maintaining detailed records through a Bug Tracker Report 🐞📊. This project highlighted my expertise in automated testing and quality assurance while showcasing my ability to merge analytical thinking with hands-on technical skills 🤝. With a strong focus on delivering user-centric, high-quality outcomes, this experience also emphasized my ability to foster collaboration and effective communication within the team 👨‍💻✨.",
+            "url": "/project/banking/"
+        }
+    ]
+}
