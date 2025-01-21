@@ -13,7 +13,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("Devarsh", async function () {
     try {
       const response = await client.getEntries({
-        content_type: "devarsh", // The content type in Contentful
+        content_type: "Devarsh", // The content type in Contentful
       });
 
 
