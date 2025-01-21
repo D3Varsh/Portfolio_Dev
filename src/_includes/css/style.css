@@ -22,11 +22,11 @@ nav {
   display: flex;
   justify-content: center; /* Centers the navigation items horizontally */
   align-items: center;     /* Centers the navigation items vertically */
-  background-color: #E7ECEF; /* Dark background for nav */
+  background-color: #72a4c2; /* Dark background for nav */
   padding: 20px;
   border-radius: 8px;
   margin: 0px 0;
-  color: #0000;
+
 }
 
 nav a {
@@ -34,9 +34,9 @@ nav a {
   text-decoration: none;
   padding: 10px 20px;
   margin: 0px; /* Space between links */
-  border: 2px solid #E7ECEF; /* Border for each link */
+  border: 2px solid #72c7f8; /* Border for each link */
   border-radius: 8px; /* Rounded corners */
-  background-color: #E7ECEF; /* Dark background for each link box */
+  background-color: #72c7f8; /* Dark background for each link box */
   transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
 }
 
