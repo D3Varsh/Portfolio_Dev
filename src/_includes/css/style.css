@@ -1,83 +1,85 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 16px; /* Base font size */
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Body and Global Styles */
-  body {
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-  }
-  nav{
-    color: aliceblue;
-  }
-  /* Header Styles */
-  header {
-    background-color: #4CAF50; /* Green background */
-    color: white;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 4px solid #333; /* Border under the header */
-  }
-  
-  header h1 {
-    font-size: 2.5rem;
-    margin: 0;
-  }
-  
-  /* Main Content */
-  main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-  }
-  
-  .devarsh-details h1 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .devarsh-content {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #555;
-  }
-  
-  /* Footer Styles */
-  footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    border-top: 4px solid #4CAF50;
-  }
-  
-  footer p {
-    font-size: 1rem;
-  }
-  
-  /* Links */
-  a {
-    color: #4CAF50;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px; /* Base font size */
+  font-family: Arial, sans-serif;
+}
+
+/* Body and Global Styles */
+body {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+  line-height: 1.6;
+}
+
+nav {
+  color: #e0e0e0;
+}
+
+/* Header Styles */
+header {
+  background-color: #1f1f1f; /* Darker header background */
+  color: #e0e0e0; /* Light text color */
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px solid #333; /* Border under the header */
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #1f1f1f; /* Darker background for main content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  color: #e0e0e0;
+}
+
+.devarsh-details h1 {
+  font-size: 2rem;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.devarsh-content {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #b3b3b3;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border-top: 4px solid #333;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Links */
+a {
+  color: #bb86fc; /* Subtle purple for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
