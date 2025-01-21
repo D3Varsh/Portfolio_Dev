@@ -30,16 +30,15 @@ nav {
 }
 
 nav a {
-  color: #0000;
+  color: #f4f4f4; /* Set the link color to a visible color */
   text-decoration: none;
   padding: 10px 20px;
-  margin: 0px; /* Space between links */
+  margin: 20px; /* Space between links */
   border: 2px solid #72c7f8; /* Border for each link */
   border-radius: 8px; /* Rounded corners */
   background-color: #72c7f8; /* Dark background for each link box */
   transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
 }
-
 nav a:hover {
   background-color: #00bcd4; /* Hover background color */
   color: #212121; /* Text color on hover */
@@ -135,4 +134,73 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Contact Form */
+#contact-form {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #A3CEF1; /* Light blue background for the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #72c7f8; /* Light border */
+  border-radius: 8px;
+  background-color: #ffffff; /* White background for inputs */
+  color: #274C77;
+  font-size: 1rem;
+}
+
+#contact-form button {
+  padding: 10px 20px;
+  background-color: #274C77; /* Button background */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+  background-color: #6096BA; /* Button hover effect */
+}
+
+/* Spinner and Response Message */
+#spinner {
+  display: none;
+  text-align: center;
+  color: #274C77;
+  font-size: 1.5rem;
+}
+
+#response-message {
+  display: none;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #274C77;
+  background-color: #A3CEF1;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#response-message.success {
+  background-color: #00bcd4; /* Success message background */
+}
+
+#response-message.error {
+  background-color: #ff5722; /* Error message background */
 }
