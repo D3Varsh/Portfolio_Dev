@@ -15,6 +15,10 @@ body {
   background-color: #121212; /* Dark background */
   color: #e0e0e0; /* Light text color */
   line-height: 1.6;
+  background-image: url('/src/_includes/image/blue.jpg');
+  background-size: cover; /* Ensures the image covers the whole screen */
+  background-position: center center; /* Centers the image */
+  background-attachment: fixed; /* Keeps the image fixed when scrolling */
 }
 
 nav {
