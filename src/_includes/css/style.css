@@ -13,27 +13,26 @@ html {
 /* Body and Global Styles */
 body {
   line-height: 1.6;
-  background-color: #ffff;
+  background-color: #333333;
   color: #f4f4f4; /* Lighter text color */
 }
 
 /* Navigation */
 nav {
-  color: #212121;
   display: flex;
   justify-content: center; /* Centers the navigation items horizontally */
   align-items: center;     /* Centers the navigation items vertically */
   background-color: #E7ECEF; /* Dark background for nav */
-  padding: 0px;
+  padding: 20px;
   border-radius: 8px;
-  margin: 20px 0;
+  margin: 0px 0;
 }
 
 nav a {
   color: #0000;
   text-decoration: none;
   padding: 10px 20px;
-  margin: 0 10px; /* Space between links */
+  margin: 0px; /* Space between links */
   border: 2px solid #E7ECEF; /* Border for each link */
   border-radius: 8px; /* Rounded corners */
   background-color: #E7ECEF; /* Dark background for each link box */
@@ -61,7 +60,7 @@ header h1 {
 
 /* Main Content */
 main {
-  padding: 0px;
+  padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
   background-color: #6096BA; /* Slightly transparent dark background */
@@ -73,9 +72,9 @@ main {
 /* Project Section */
 .project-class {
   background-color: #A3CEF1; /* Dark background for projects */
-  padding: 0px;
+  padding: 20px;
   border-radius: 8px;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .project-class h1 {
@@ -120,7 +119,7 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
-  border-top: 4px solid #8B8C89;
+  border-top: 4px solid #333;
 }
 
 footer p {
