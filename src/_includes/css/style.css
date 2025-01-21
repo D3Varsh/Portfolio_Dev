@@ -12,7 +12,6 @@ html {
 
 /* Body and Global Styles */
 body {
-  background-color: #121212; /* Dark background */
   color: #e0e0e0; /* Light text color */
   line-height: 1.6;
   background-image: url('/src/_includes/image/blue.jpg');
