@@ -1,8 +1,14 @@
 ---
 title: "Project"
 layout: layouts/default.njk
-permalink: "projects/{{ devarsh.slug }}/index.html"
+permalink: "project/{{ devarsh.slug }}/index.html"
 ---
 <div>
     <h1>{{devarsh.title}}</h1>
+    {% if devarsh.image %}
+    <img src="{{ devarsh.image }}" alt="{{ devarsh.title }}" class="devarsh-image">
+  {% endif %}
+
+  <div class="player-content">
+    {{ devarsh.content | safe }}
 </div>

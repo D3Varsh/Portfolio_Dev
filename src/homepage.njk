@@ -54,12 +54,13 @@ limbachiya-794b98277"><i class="fa-brands fa-linkedin"></i></a>
 <div class="project-class">
 <h1>Projects</h1>
 <ul>
+  {% for player in pagination.items %}
     <li>
       <a href="{{ devarsh.url }}">
         {{ devarsh.title }}
         {{ devarsh.image }}
       </a>
     </li>
-
+  {% endfor %}
 </ul>
 </div>
