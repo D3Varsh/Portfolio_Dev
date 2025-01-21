@@ -13,7 +13,7 @@ html {
 /* Body and Global Styles */
 body {
   line-height: 1.6;
-  background-color: #333333;
+  background-color: #ffff;
   color: #f4f4f4; /* Lighter text color */
 }
 
@@ -26,6 +26,7 @@ nav {
   padding: 20px;
   border-radius: 8px;
   margin: 0px 0;
+  color: #0000;
 }
 
 nav a {
