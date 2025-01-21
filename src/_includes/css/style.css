@@ -13,17 +13,18 @@ html {
 /* Body and Global Styles */
 body {
   line-height: 1.6;
-  background-color: #333333;
+  background-color: #ffff;
   color: #f4f4f4; /* Lighter text color */
 }
 
 /* Navigation */
 nav {
+  color: #212121;
   display: flex;
   justify-content: center; /* Centers the navigation items horizontally */
   align-items: center;     /* Centers the navigation items vertically */
   background-color: #E7ECEF; /* Dark background for nav */
-  padding: 20px;
+  padding: 0px;
   border-radius: 8px;
   margin: 20px 0;
 }
@@ -60,7 +61,7 @@ header h1 {
 
 /* Main Content */
 main {
-  padding: 20px;
+  padding: 0px;
   max-width: 1200px;
   margin: 0 auto;
   background-color: #6096BA; /* Slightly transparent dark background */
@@ -72,7 +73,7 @@ main {
 /* Project Section */
 .project-class {
   background-color: #A3CEF1; /* Dark background for projects */
-  padding: 20px;
+  padding: 0px;
   border-radius: 8px;
   margin-top: 20px;
 }
