@@ -21,11 +21,11 @@ module.exports = function (eleventyConfig) {
       return response.items.map((item) => {
         return {
           title: item.fields.title,
-          slug: item.fields.slug,
           image: item.fields.image ? item.fields.image.fields.file.url : null,
-          description: documentToHtmlString(item.fields.description), // Render rich text content to HTML
+          slug: item.fields.slug,
+          content: documentToHtmlString(item.fields.content), 
           date: item.fields.date,
-          url: `/player/${item.fields.slug}/`, // URL path for the player
+          url: `/devarsh/${item.fields.slug}/`, 
         };
       });
     } catch (error) {
