@@ -13,24 +13,22 @@ html {
 /* Body and Global Styles */
 body {
   line-height: 1.6;
-  background-image: url('/dist/_includes/image/blue.jpg');
-  background-size: cover; /* Ensures the image covers the whole screen */
-  background-position: center center; /* Centers the image */
-  background-attachment: fixed; /* Keeps the image fixed when scrolling */
+  background-color:#333333;
+  color: #f4f4f4; /* Lighter text color */
 }
 
+/* Navigation */
 nav {
-  color: #e0e0e0;
-
+  color: #f4f4f4;
 }
 
 /* Header Styles */
 header {
-  background-color: #1f1f1f; /* Darker header background */
-  color: #e0e0e0; /* Light text color */
+  background-color: #212121; /* Darker header background */
+  color: #f4f4f4; /* Lighter text color */
   padding: 20px;
   text-align: center;
-  border-bottom: 4px solid #333; /* Border under the header */
+  border-bottom: 4px solid #333;
 }
 
 header h1 {
@@ -43,19 +41,57 @@ main {
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #1f1f1f; /* Darker background for main content */
+  background-color: rgba(33, 33, 33, 0.8); /* Slightly transparent dark background */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   color: #e0e0e0;
-  
 }
 
+/* Project Section */
+.project-class {
+  background-color: #333333; /* Dark background for projects */
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
 
+.project-class h1 {
+  font-size: 2rem;
+  color: #f4f4f4;
+}
+
+.project-class ul {
+  list-style-type: none;
+}
+
+.project-class li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.project-class a {
+  display: flex;
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+.project-class .project-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.project-class a:hover {
+  color: #f4f4f4;
+  text-decoration: underline;
+}
 
 /* Footer Styles */
 footer {
-  background-color: #1f1f1f;
-  color: #e0e0e0;
+  background-color: #212121; /* Dark footer background */
+  color: #f4f4f4;
   padding: 10px;
   text-align: center;
   position: relative;
@@ -70,9 +106,8 @@ footer p {
 
 /* Links */
 a {
-  color: #ffff; /* Subtle purple for links */
+  color: #00bcd4; /* Cyan color for links */
   text-decoration: none;
-
 }
 
 a:hover {
