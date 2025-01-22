@@ -24,7 +24,6 @@ nav {
   align-items: center;     /* Centers the navigation items vertically */
   background-color: #72a4c2; /* Dark background for nav */
   padding: 20px;
-  border-radius: 8px;
   margin: 0px 0;
 
 }
@@ -35,7 +34,7 @@ nav a {
   padding: 10px 20px;
   margin: 20px; /* Space between links */
   border: 2px solid #72c7f8; /* Border for each link */
-  border-radius: 8px; /* Rounded corners */
+ 
   background-color: #72c7f8; /* Dark background for each link box */
   transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
 }
@@ -65,7 +64,7 @@ main {
   margin: 0 auto;
   background-color: #6096BA; /* Slightly transparent dark background */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
+
   color: #274C77;
 }
 
@@ -73,7 +72,6 @@ main {
 .project-class {
   background-color: #A3CEF1; /* Dark background for projects */
   padding: 20px;
-  border-radius: 8px;
   margin-top: 0px;
 }
 
@@ -142,7 +140,7 @@ a:hover {
   margin: 40px auto;
   background-color: #A3CEF1; /* Light blue background for the form */
   padding: 20px;
-  border-radius: 8px;
+
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -158,7 +156,7 @@ a:hover {
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #72c7f8; /* Light border */
-  border-radius: 8px;
+
   background-color: #ffffff; /* White background for inputs */
   color: #274C77;
   font-size: 1rem;
@@ -169,7 +167,7 @@ a:hover {
   background-color: #274C77; /* Button background */
   color: #ffffff;
   border: none;
-  border-radius: 8px;
+ 
   font-size: 1.1rem;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -194,7 +192,7 @@ a:hover {
   color: #274C77;
   background-color: #A3CEF1;
   padding: 10px;
-  border-radius: 8px;
+ 
 }
 
 #response-message.success {
