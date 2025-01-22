@@ -64,7 +64,6 @@ main {
   margin: 0 auto;
   background-color: #6096BA; /* Slightly transparent dark background */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-
   color: #274C77;
 }
 
@@ -126,7 +125,7 @@ footer p {
 
 /* Links */
 a {
-  color: #00bcd4; /* Cyan color for links */
+  color: #0000;
   text-decoration: none;
 }
 
