@@ -64,7 +64,7 @@ main {
   margin: 0 auto;
   background-color: #6096BA; /* Slightly transparent dark background */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  color: #274C77;
+  color: #000000;
 }
 
 /* Project Section */
@@ -76,7 +76,7 @@ main {
 
 .project-class h1 {
   font-size: 2rem;
-  color: #274C77;
+  color: #000000;
 }
 
 .project-class ul {
@@ -96,11 +96,12 @@ main {
 }
 
 .project-class .project-image {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  width: 50px; /* keeps it square */
+  height: 50px; /* keeps it square */
   margin-right: 15px;
+  object-fit: cover; /* ensures the image fills the square without stretching */
 }
+
 
 .project-class a:hover {
   color: #f4f4f4;
@@ -110,7 +111,7 @@ main {
 /* Footer Styles */
 footer {
   background-color: #8B8C89; /* Dark footer background */
-  color: #f4f4f4;
+  color: #000000;
   padding: 10px;
   text-align: center;
   position: relative;
@@ -125,7 +126,7 @@ footer p {
 
 /* Links */
 a {
-  color: #0000; /* Cyan color for links */
+  color: #ffff;
   text-decoration: none;
 }
 
