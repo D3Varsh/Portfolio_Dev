@@ -64,7 +64,7 @@ main {
   margin: 0 auto;
   background-color: #6096BA; /* Slightly transparent dark background */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  color: #0000;
+  color: #274C77;
 }
 
 /* Project Section */
@@ -92,7 +92,7 @@ main {
 .project-class a {
   display: flex;
   text-decoration: none;
-  color: #0000;
+  color: #f4f4f4;
 }
 
 .project-class .project-image {
@@ -110,7 +110,7 @@ main {
 /* Footer Styles */
 footer {
   background-color: #8B8C89; /* Dark footer background */
-  color: #0000;
+  color: #f4f4f4;
   padding: 10px;
   text-align: center;
   position: relative;
@@ -125,7 +125,7 @@ footer p {
 
 /* Links */
 a {
-  color: #ffff;
+  color: #0000; /* Cyan color for links */
   text-decoration: none;
 }
 
