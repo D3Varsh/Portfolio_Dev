@@ -7,7 +7,7 @@ exports.handler = async (event) => {
     require('dotenv').config();
   }
 
-  const SENDGRID_API_KEY = process.env.SEND_GRID_API;
+  const SENDGRID_API_KEY = "process.env.SEND_GRID_API";
 
   // Configure SendGrid
   if (!SENDGRID_API_KEY) {
