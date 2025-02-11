@@ -1,5 +1,6 @@
 const sgMail = require('@sendgrid/mail');
 require('dotenv').config();
+console.log("SendGrid API Key:", process.env.SEND_GRID_API);
 
 exports.handler = async (event) => {
   if (process.env.NODE_ENV !== 'production') {
