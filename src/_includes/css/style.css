@@ -13,7 +13,7 @@ html {
 /* Body and Global Styles */
 body {
   line-height: 1.6;
-  background-color: #ffff;
+  background-color: hsl(24, 64%, 60%);
   color: #f4f4f4; /* Lighter text color */
 }
 
@@ -22,7 +22,7 @@ nav {
   display: flex;
   justify-content: center; /* Centers the navigation items horizontally */
   align-items: center;     /* Centers the navigation items vertically */
-  background-color: #72a4c2; /* Dark background for nav */
+  background-color: #eeb97b; /* Dark background for nav */
   padding: 20px;
   margin: 0px 0;
 
@@ -33,20 +33,20 @@ nav a {
   text-decoration: none;
   padding: 10px 20px;
   margin: 20px; /* Space between links */
-  border: 2px solid #72c7f8; /* Border for each link */
+  border: 2px solid #f2d4b3; /* Border for each link */
  
-  background-color: #72c7f8; /* Dark background for each link box */
+  background-color: #f2d4b3; /* Dark background for each link box */
   transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
 }
 nav a:hover {
-  background-color: #00bcd4; /* Hover background color */
-  color: #212121; /* Text color on hover */
+  background-color: #f2d4b3; /* Hover background color */
+  color: #eeb97b; /* Text color on hover */
 }
 
 /* Header Styles */
 header {
-  background-color: #274C77; /* Darker header background */
-  color: #f4f4f4; /* Lighter text color */
+  background-color: #5c4c4c; /* Darker header background */
+  color: #f2d4b3; /* Lighter text color */
   padding: 20px;
   text-align: center;
   border-bottom: 4px solid #274C77;
@@ -62,7 +62,7 @@ main {
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #6096BA; /* Slightly transparent dark background */
+  background-color: #f2d4b3; /* Slightly transparent dark background */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   color: #000000;
 }
